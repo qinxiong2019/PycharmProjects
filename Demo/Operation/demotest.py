@@ -2,7 +2,7 @@ from selenium import webdriver
 from Demo.Locator.locator import Locator
 import json
 
-CONFIGURATION_JSON = "Locator/LocatorMap/locatormap.json"
+CONFIGURATION_JSON = "Demo/Locator/LocatorMap/locatormap.json"
 
 # Load configuration
 locatormap = json.load(open(CONFIGURATION_JSON))
