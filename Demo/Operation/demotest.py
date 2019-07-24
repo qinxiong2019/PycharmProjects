@@ -22,8 +22,11 @@ class Operations(object):
             op.sendkey(locatormap["password_xpath"], password)
             op.click(locatormap["loginbutton_xpath"])
             title = op.gettitle()
-        except Exception:
+        except Exception as e:
             logging.log(1, "login failed")
+            logging.exception("exception : login failed")
+            print "print login failed"
+            print e.message
         finally:
             self.quit()
         return title
