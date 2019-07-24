@@ -12,6 +12,7 @@ locatormap = json.load(open(CONFIGURATION_JSON))
 class Operations(object):
 
     def login(self, username, password, url):
+        title = ""
 
         try:
             self.driver = webdriver.Chrome()
@@ -22,7 +23,7 @@ class Operations(object):
             op.click(locatormap["loginbutton_xpath"])
             title = op.gettitle()
         except Exception:
-            logging.log("info", "login failed")
+            logging.log(1, "login failed")
         finally:
             self.quit()
         return title
