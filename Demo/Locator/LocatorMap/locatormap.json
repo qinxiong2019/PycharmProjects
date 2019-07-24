@@ -1,0 +1,5 @@
+{
+   "username_xpath" : "//input[@id='j_username']",
+   "password_xpath" : "//input[@id='j_password']",
+   "loginbutton_xpath" : "//button[@id='loginbtn']"
+}
